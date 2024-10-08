@@ -1,169 +1,76 @@
-/* styles.css */
-
-/* Styling Umum */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e0f7fa; /* Warna latar belakang yang mencolok */
-}
-
-/* Header */
-header {
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-/* Heading Utama di Header */
-header h1 {
-    font-size: 2em;
+h1 {
+    font-size: 36px;
     font-weight: bold;
-    margin: 0; /* Menghindari spasi ekstra */
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* Logo */
+/* Gaya untuk logo */
 .logo {
-    width: 100px;
-    height: auto;
     display: block;
-    margin: 10px auto; /* Memberi jarak sekitar logo */
+    margin: 0 auto;
+    max-width: 150px;
 }
 
-/* Navigasi */
-nav {
-    margin: 10px 0;
+/* Navigasi tautan */
+.navigation {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-nav a {
-    margin: 0 15px;
+.navigation a {
+    margin: 0 10px;
     text-decoration: none;
-    color: #4CAF50; /* Warna hijau */
-    font-weight: bold;
-    font-family: 'Verdana', sans-serif;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Tabel Menu */
-.menu-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    border: 2px solid #4CAF50; /* Border tabel */
-}
-
-.menu-table th, .menu-table td {
-    padding: 10px;
-    text-align: center;
-}
-
-.menu-table th {
-    background-color: #4CAF50; /* Warna latar belakang header */
-    color: white;
-    font-family: 'Georgia', serif;
-    font-size: 1em;
-}
-
-.menu-table td {
-    font-family: 'Arial', sans-serif;
-    font-size: 0.9em;
-}
-
-/* Baris Ganjil dan Genap */
-.menu-table tr:nth-child(odd) {
-    background-color: #f9f9f9; /* Warna latar belakang baris ganjil */
-}
-
-.menu-table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Warna latar belakang baris genap */
-}
-
-/* Gambar Makanan */
-.food-image {
-    width: 100px;
-    height: auto;
-}
-
-/* Form Pesanan */
-form#order-form {
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
-}
-
-form#order-form h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-form#order-form label {
-    display: block;
-    margin: 5px 0;
-    font-size: 1em;
-}
-
-form#order-form button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 5px;
-}
-
-form#order-form button:hover {
-    background-color: #45a049;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9em;
+    font-size: 18px;
     color: #333;
 }
 
-/* Styling untuk About Section */
-.about-section {
+.navigation a:hover {
+    color: #ff4500;
+}
+
+/* Tabel */
+table {
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #666;
+    font-family: Arial, sans-serif;
+}
+
+th {
+    background-color: #ff6347;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+td {
+    background-color: #f9f9f9;
+    padding: 10px;
     text-align: center;
+    font-family: 'Verdana', sans-serif;
+    border: 1px solid #ddd;
 }
 
-.developer-photo {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 20px;
+img {
+    max-width: 100px;
 }
 
-.about-section h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+/* Baris ganjil */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
 }
 
-.about-section p {
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 20px;
+/* Baris genap */
+tbody tr:nth-child(even) {
+    background-color: #e6e6e6;
 }
 
-.social-media a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
-}
-
-.social-media a:hover {
-    text-decoration: underline;
+/* Gaya untuk footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }
