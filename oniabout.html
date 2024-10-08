@@ -1,0 +1,8 @@
+document.getElementById('order-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Mencegah pengiriman form
+
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    const orderedFoods = Array.from(checkboxes).map(cb => cb.value);
+
+    console.log('Pesanan Anda:', orderedFoods);
+});
