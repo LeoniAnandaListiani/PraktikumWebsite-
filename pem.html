@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resep strawberry cake</title>
+    <title>Resep Strawberry Cake</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,11 +19,15 @@
         }
 
         /* Gaya untuk gambar di tengah */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
         .resep-img {
-            display: block;
-            margin: 50 px;
-            width: 46px;
-            height: 44px; 
+            width: 200px; /* Mengatur lebar gambar */
+            height: auto; /* Agar proporsi gambar tetap terjaga */
+            border-radius: 10px;
         }
 
         .bahan {
@@ -45,6 +49,8 @@
             color: #006400;
         }
 
+        button {
+            display: inline-block;
             margin: 10px;
             padding: 10px;
             background-color: #8b0000;
@@ -52,6 +58,7 @@
             border: none;
             cursor: pointer;
             font-size: 16px;
+            border-radius: 5px;
         }
 
         button:hover {
@@ -73,7 +80,7 @@
         <h1>Strawberry Cake</h1>
 
         <div class="image-container">
-            <img src="https://dorebyletao.com/wp-content/uploads/2020/03/4-3.png" alt="Strawberry Cake">
+            <img class="resep-img" src="https://dorebyletao.com/wp-content/uploads/2020/03/4-3.png" alt="Strawberry Cake">
         </div>
 
         <div class="list-container">
@@ -109,7 +116,7 @@
     </div>
 
     <footer>
-        &copy; [Leoni Ananda Listiani] 2024
+        &copy; Leoni Ananda Listiani 2024
     </footer>
 
     <script>
